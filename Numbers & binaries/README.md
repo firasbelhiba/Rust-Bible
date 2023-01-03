@@ -1,5 +1,5 @@
 
-# Lesson 1 : Numbers & binaries 
+# Lesson 1 : Numbers & binaries 🔢
 
 
 ## Representation of data  
@@ -65,3 +65,39 @@ Use them to store whole ( signed , possibly negative ) numbers
 - E.g : 
     - Unsigned 16-bit number in [0..65,535]
     - Signed 16-bit number in [-32,768..32,767]
+    - We also use them to store non-whole numbers (floating-point numbers)
+
+## Platform specific types
+
+CPU and processes have something called bitness (E.g. "32-bit" or "64-bit" CPU )
+
+The bitness puts a limit on range of memory you can access ( You will need to store variables to store 16- or 32- or 64-bit numbers or strings)
+
+For example 32 bits processes can only use up to 4GB of RAM
+
+Many programming languages provides platform specific integer types ( signed and unsigned )
+- Size of the data depends on the platform you are using
+- E.g. on a 64-bit machine, a platform specific integral size would take up 64 bits.
+
+## Floating point numbers
+
+Floating numbers are used to store non-whole values such as 1.234 or -5.0001 
+
+There are 2 data types : 
+- 32-bit (alo called 'float' or 'single-precision )
+- 64-bit (alo called 'double' or 'double-precision )
+
+Floating-point representation is standardized (IEEE 754)
+
+Floating-point numbers do not follow exact representation of numbers ( e.g. 0.1 + 0.2 is not equal to 0.3)
+
+Floating-points represent a range of special values: infinity,quite/signaling NaNs
+
+Here is some videos to explain more Floating-points numbers : 
+
+[Video 1](https://www.youtube.com/watch?v=PZRI1IfStY0) 
+[Video 2](https://www.youtube.com/watch?v=SPw9f2eXh8Y) 
+
+
+Thank you ! 
+
