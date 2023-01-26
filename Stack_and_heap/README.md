@@ -59,3 +59,22 @@ Also, because the stack has a limited size, it can prevent buffer overflow, whic
 
 In summary, stack memory is efficient for managing local and temporary data because of its LIFO memory management strategy, which ensures predictable and orderly memory allocation and deallocation, it's fast, and it can prevent buffer overflow vulnerabilities.
 
+
+### Question 5 : What is the difference between & and * ?
+
+In programming, & and `*` have different meanings depending on the context in which they are used.
+
+The `&` symbol is used to create a reference to a variable. A reference is a way to refer to a variable without taking ownership of it. This means that you can access and modify the contents of the variable, but you don't have the ability to move or deallocate the memory.
+
+In Rust, for example, when you use `&` before a variable, you create an immutable reference to that variable. If you want to create a mutable reference, you use `&mut` before the variable.
+
+On the other hand, the `*` symbol is used to dereference a pointer. A pointer is a variable that stores the memory address of another variable. By dereferencing a pointer, you can access the contents of the variable it points to.
+
+In Rust, when you use `*` before a pointer, you are dereferencing the pointer and accessing the value it points to.
+
+In summary, `&` is used to create a reference, a way to refer to a variable without taking ownership of it, while `*` is used to dereference a pointer, a variable that stores the memory address of another variable, and access the contents of the variable it points to.
+
+
+
+
+
