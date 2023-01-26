@@ -9,9 +9,9 @@ fn second() {
     let a: u8 = 123;
     {
         let a: u8 = 12;
-        println!("This value of a is inside the scope: {}", a);
+        println!("This value of a is inside the scope: {} \n", a);
     }
-    println!("This value of a is outside of the scope: {}", a);
+    println!("This value of a is outside of the scope: {} \n", a);
 }
 
 fn main() {
